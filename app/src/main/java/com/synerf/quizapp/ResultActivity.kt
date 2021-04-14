@@ -12,9 +12,8 @@ class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        setContentView(binding.root)
-
         binding = ActivityResultBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val userName = intent.getStringExtra(Constants.USER_NAME)
         binding.tvName.text = userName
